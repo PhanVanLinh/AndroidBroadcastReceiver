@@ -6,11 +6,11 @@ import android.content.Intent;
 import android.util.Log;
 import android.widget.Toast;
 
-public class MyReceiver extends BroadcastReceiver {
+public class TimeSetReceiver extends BroadcastReceiver {
 
    @Override
    public void onReceive(Context context, Intent intent) {
-       Log.i("MyReceiver", "sss: "+context.getApplicationContext());
+       Log.i("TimeSetReceiver", "sss: "+context.getApplicationContext());
        Toast.makeText(context, "Intent Detected.", Toast.LENGTH_LONG).show();
    }
 }
